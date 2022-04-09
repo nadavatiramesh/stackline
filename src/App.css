@@ -1,0 +1,142 @@
+
+body {
+  line-height: 16px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+}
+
+.app-header {
+  background-color: #052849;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.app-wrapper {
+  background-color: #f6f8fa;
+}
+
+.app-container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.chart-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  z-index: 9;
+  top: 0;
+}
+
+.charts-container {
+  flex: 1;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+  margin: 24px;
+  background-color: #ffffff;
+}
+
+.reviews-container {
+  width: 240px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+  margin: 24px;
+  background-color: #ffffff;
+}
+
+.review-wrapper {
+  margin-bottom: 24px;
+}
+
+.review-score {
+  display: flex;
+  align-items: center;
+
+}
+.review-score .score {
+  background-color: #26a541;
+  font-size: 12px;
+  color: #ffffff;;
+  padding: 2px 12px;
+  border-radius: 10px;
+}
+
+.review-score .customer-name {
+  font-size: 12px;
+  margin-left: 12px;
+  color: #7e8fa8;
+  font-weight: 700;
+}
+
+.review-description {
+  font-size: 11px;
+  margin-top: 12px;
+  color: #052849;
+}
+
+.rdt_Table {
+  border: 1px solid #efefef;
+  max-height: 250px;
+  overflow: scroll;
+}
+
+.rdt_TableHead {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 99;
+}
+
+.rdt_TableHeadRow {
+  height: 40px;
+  min-height: 40px !important;
+  border-bottom: 1px solid #efefef !important;
+}
+
+.rdt_TableHeadRow .rdt_TableCol {
+  color: #052849 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+.rdt_TableRow {
+  height: 40px !important;
+  min-height: 40px !important;
+  border-bottom: 1px solid #efefef !important;
+ }
+
+ .rdt_TableRo .rdt_TableCell {
+  color: #7e8fa8 !important;
+  font-size: 12px !important;
+ }
+
+ .rdt_TableCol_Sortable span {
+  font-size: 8px;
+  position: relative;
+  left: 4px;
+  top: 2px;
+ }
+
+ .highcharts-credits {
+   display: none;
+ }
+
+ @media screen and (max-width: 1200px) {
+  .d-flex {
+    flex-direction: column;
+  }
+  .reviews-container {
+    width: auto;
+  }
+ }
